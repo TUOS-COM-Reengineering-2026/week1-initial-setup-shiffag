@@ -2,7 +2,7 @@
 # Week 1: Getting Started
 
 - In this week, we will set up the development environment for this module.
-- We will use Git, Python (with virtual environments), PyCharm (IDE), and Jupyter Notebooks.
+- We will use Git, Python (with virtual environments), VS-Code (IDE), and Jupyter Notebooks.
 - Follow the instructions below to set up your development environment (without cloning this repository).
 - If you are confident about Git, Python virtual envs, IDEs, and Jupyter Notebooks, jump to Section 5. 
 
@@ -11,7 +11,7 @@ Jump to:
 - [Week 1: Getting Started](#week-1-getting-started)
   - [1. Git](#1-git)
   - [2. Python \& Virtual Environments](#2-python--virtual-environments)
-  - [3. PyCharm (IDE)](#3-pycharm-ide)
+  - [3. VS-Code (IDE)](#3-visual-studio-code-ide)
   - [4. Jupyter Notebooks](#4-jupyter-notebooks)
   - [5. Simple Exercise](#5-simple-exercise)
 
@@ -81,7 +81,7 @@ where python # On Windows
 It should return the path to the Python executable in your venv, which is usually something like `yourdirectory/.venv/bin/python` (Linux/Mac) or `yourdirectory\.venv\Scripts\python.exe` (Windows).
 
 > [!NOTE]
-> If you use PyCharm (see below), you probably don't need to manually create and manage `venv`; PyCharm should do it for you.
+> If you use VS-Code (see below), you probably don't need to manually create and manage `venv`; VS-Code should do it for you.
 
 Once the venv has been activated, you can install Python packages using `pip install`:
 ```sh
@@ -128,31 +128,26 @@ Delete the `.venv` folder, then create a fresh venv and install the required pac
 Ask TAs for help if the issue persists.
 
 
-## 3. PyCharm (IDE)
+## 3. Visual Studio Code (IDE)
 
-PyCharm is an IDE (Integrated Development Environment) for Python.
-- If you feel comfortable with other editors, such as VSCode, you can use them instead and skip the rest of this section.
-- However, we will use PyCharm in this module, and all the instructions will be based on PyCharm.
+Visual Studio Code (VS-Code) is an IDE (Integrated Development Environment) that supports Python.
+- If you feel comfortable with other editors, such as PyCharm, you can use them instead and skip the rest of this section.
+- However, we will use VS-Code in this module, and all the instructions will be based on VS-Code.
 
-### How to Install PyCharm (5-10 minutes)
-As a student, you are eligible for a free PyCharm Professional license.
-You can find more information [here](https://www.jetbrains.com/community/education/#students).
+### How to Install VS-Code (5-10 minutes)
 
-After getting the education license, you can download PyCharm Professional from [here](https://www.jetbrains.com/pycharm/download).
+VS-Code is widely supported and straightforward to install. There is an excellent set of instructions [available here](https://code.visualstudio.com/docs).
 
-After installing PyCharm, you need to restart your computer.
+Specifically, the instructions to install VS-Code itself are [available here](https://code.visualstudio.com/docs/setup/setup-overview), and the subsequent set-up to support Python is [described here](https://code.visualstudio.com/docs/python/python-quick-start). This includes a small set of exercises to make sure that it works for you.
+
+Please take note of the [requirement to already have a Python interpreter installed, and the instructions on how you can ensure this](https://code.visualstudio.com/docs/python/python-tutorial#_install-a-python-interpreter). 
 
 
-### How to Use PyCharm
+### Using VS-Code
 
-To quickly overview PyCharm, see [Quick Start Guide](https://www.jetbrains.com/help/pycharm/getting-started.html).
+As an exercise, clone this repository to your local machine and open it in VS-Code. You can try to run the `hello.py` file (open the file and click the 'play' button at the top) to make sure that it runs. 
 
-You can refer to [Create and Run Your First Project](https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html) to get more detailed guidelines on creating and running a project in PyCharm.
-
-As an exercise, clone this repository to your local machine and open it in PyCharm.
-While you are opening the repository, PyCharm will ask you to create a Python virtual environment.
-You can simply click "Create" to let PyCharm create a project-specific Python virtual environment for you.
-You can then run the `hello.py` script to check if everything works well.
+When you do this it may guide you through the creation of a .venv environment.
 
 
 ## 4. Jupyter Notebooks
@@ -163,21 +158,10 @@ Jupyter Notebook is a web-based interactive development environment.
 Often we will give you a Jupiter Notebook file (`.ipynb`) for each hands-on exercise.
 You should know how to run a Jupyter Notebook file.
 
-In fact, it's simple. You can simply double-click a Jupyter Notebook file to open it in PyCharm.
+In fact, it's simple. You can simply double-click a Jupyter Notebook file to open it in VS-Code.
 Then, you can run each cell by clicking the "Run" button on the left side of the cell.
 
-However, before you do anything, you should first install `jupyter` in your Python virtual environment.
-PyCharm will ask you to install `jupyter` if you try to run a Jupyter Notebook file without `jupyter` installed.
-You can simply click "Install Jupyter" to let PyCharm sort it out for you.
-Alternatively, you can install `jupyter` manually by running the following command in your terminal (after activating your Python virtual environment; this is done automatically in PyCharm, but you should do it manually in your terminal):
-
-```bash
-pip install jupyter
-```
-
-Note that you must activate your working Python virtual environment before installing `jupyter`.
-
-Enjoy running Jupyter Notebook files in PyCharm!
+Jupyter should already be included with the Python extensions for VS-Code.
 
 
 ## 5. Simple Exercise
@@ -190,7 +174,7 @@ Then, run the script and check if it is printed correctly.
 ![img.png](misc/img7.png)
 
 Finally, push your code to your repository, so we can see if you've done it.
-To commit and push your change, you can use either PyCharm or your terminal.
+To commit and push your change, you can use either VS-Code or your terminal.
 
 In the built-in terminal, you can run the following commands:
 
